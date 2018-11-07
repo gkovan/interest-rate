@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.gk.mortgage.calculator.task.MortgageTaskTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.026 sec <<< FAILURE! - in com.gk.mortgage.calculator.task.MortgageTaskTest
-testTaskCalculatesCorrectMonthlyMortgagePayment(com.gk.mortgage.calculator.task.MortgageTaskTest)  Time elapsed: 0.004 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at com.gk.mortgage.calculator.task.MortgageTaskTest.testTaskCalculatesCorrectMonthlyMortgagePayment(MortgageTaskTest.java:30)
-

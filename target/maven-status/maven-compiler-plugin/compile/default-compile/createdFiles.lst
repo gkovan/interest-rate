@@ -1,9 +1,0 @@
-application/rest/v1/Example.class
-com/gk/mortgage/calculator/controller/MortageCalculatorController.class
-Mortgage.class
-com/gk/mortgage/calculator/task/MortgageTask.class
-application/rest/HealthEndpoint.class
-com/gk/mortgage/calculator/domain/MortgageCalculatorRequest.class
-application/Info.class
-application/SBApplication.class
-com/gk/mortgage/calculator/domain/MortgageCalculatorResponse.class
