@@ -1,2 +1,9 @@
 server:
-  port: "${port:8111}"
+  port: "${port:8111}"      
+
+security:
+  basic:
+    enabled: true    
+  user:
+    name: user1
+    password: password1
