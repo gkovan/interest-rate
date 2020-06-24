@@ -8,12 +8,16 @@ import org.springframework.stereotype.Service;
 import com.gk.interest.rate.domain.InterestRate;
 import com.gk.interest.rate.domain.InterestRatesResponse;
 
+import lombok.extern.slf4j.Slf4j;
 
+
+@Slf4j
 @Service
 public class InterestRateTaskImpl implements InterestRateTask {
 
 	@Override
 	public InterestRatesResponse getRates() {
+		log.info("Getting latest interest rates");
 		InterestRatesResponse response = new InterestRatesResponse();
 		List<InterestRate> rateList = new ArrayList<InterestRate>();
 		InterestRate rate30Year = new InterestRate();
@@ -25,6 +29,7 @@ public class InterestRateTaskImpl implements InterestRateTask {
 		rate15Year.setType("15");
 		rateList.add(rate15Year);
 		response.setInterestRates(rateList);
+		log.info("The interest rates are: {}", response.toString());
 		return response;
 	}
 }

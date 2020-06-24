@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.gk.interest.rate.domain.InterestRatesResponse;
 import com.gk.interest.rate.task.InterestRateTask;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @RestController
 public class InterestRateController {
 	
@@ -18,7 +21,8 @@ public class InterestRateController {
 	}
 	
 	@GetMapping("/interest-rates")
-	public InterestRatesResponse getRates() {		
+	public InterestRatesResponse getRates() {	
+		log.info("In controller of /interest-rates");
 		return interestRateTask.getRates();
 	}
 
